@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/23643605da.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Personal Webpage</title>
+    <style>
+      body {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        background-color: #efdecd;
+      }
+      h1 {
+        font-weight: bolder;
+      }
+      h3 {
+        font-style: italic;
+      }
+      /* Make the header be on the top  left */
+      header {
+        padding-top: 30px;
+        top: 0;
+        position: sticky;
+        align-items: center;
+        z-index: 1000;
+      }
+      /* Leave space at the top and bottom */
+      nav {
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      /* Remove the dots */
+      nav ul {
+        list-style: none;
+      }
+      /* Remove the line underneath text */
+      nav ul li a {
+        text-decoration: none;
+        font-weight: 900;
+        padding-bottom: 5px; /* Space between text and line */
+        color: #333;
+      }
+
+      .social-container {
+        display: flex;
+        gap: 15px; /* Space between icons */
+        margin-top: 2rem;
+      }
+
+      .social-icon {
+        font-size: 24px;
+        text-decoration: none;
+        transition: transform 0.2s ease;
+      }
+
+      /* Specific brand colors */
+      .github {
+        color: black;
+      }
+      .linkedin {
+        color: #0a66c2;
+      }
+      /* Simple scale effect on mouseover */
+      .social-icon:hover {
+        transform: scale(1.2);
+      }
+      main {
+        padding-left: 350px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Nozipho Sithole</h1>
+      <h3>Full-stack Developer</h3>
+
+      <!--Navigation that should lead you to the section corresponding to the id-->
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+        </ul>
+        <ul>
+          <li><a href="#experience">Experience</a></li>
+        </ul>
+        <ul>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+        <ul>
+          <li><a href="#contact">Contact Info</a></li>
+        </ul>
+      </nav>
+
+      <!--Social media icons that lead straigt to my profile-->
+      <div class="social-container">
+        <a
+          href="https://github.com/GeeStrong"
+          target="_blank"
+          class="social-icon github"
+        >
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/nozipho-sithole-73ba9722a/?skipRedirect=true"
+          target="_blank"
+          class="social-icon linkedin"
+        >
+          <i class="fa-brands fa-square-linkedin"></i>
+        </a>
+      </div>
+    </header>
+    <main>
+      <!--Section showing personal information-->
+      <div id="about">
+        <h2>Why choose tech?</h2>
+        <p>
+          Hi, i'm Nozipho,a bootcamper at HyperionDev studying software
+          engineering. Before venturing into tech I studied biochemistry and
+          chemistry from 2018-2022, I then discovered my passion for coding and
+          shifted my focus to software engineering. I love turning complex
+          problems into clean, intuitive web applications and create something
+          new and interesting that helps us.
+        </p>
+        <p></p>
+        <p>
+          I am passionate about building seamless, scalable user experiences
+          through clean and efficient code. I view every project as a chance to
+          grow, and I thrive in collaborative environments where
+          knowledge-sharing goes both ways. Ultimately, my goal is to team up
+          with inspiring people to create impactful digital products. I am drawn
+          to tech because it allows me to continuously learn and build solutions
+          that make a real difference, this allows me to think out of the box
+          and turn complex problems into clean, intuitive web applications.
+        </p>
+      </div>
+
+      <!--Section showing experience in coding-->
+      <div id="experience">
+        <h2>Experience</h2>
+        <p>
+          I am curently enrolled in a bootcamp at HyperionDev. I have learned a
+          few languages so far, which are html, css, and javascript. Before
+          starting this bootcamp I had self taught myself python in preparation
+          of a bootcamp at wethinkcode. My experience in tech is quite small but
+          I did do some basic project that got me to love coding more. The most
+          memorable ones that I have done so far includes creating a shopping
+          cart using html; css; and javascript, and the other one was creating a
+          chess game using python. There is nothing more frustrating than
+          fighting with a confusing website to do a simple task. That is why I
+          consider exceptional user experience a make-or-break factor for any
+          successful software.
+        </p>
+      </div>
+
+      <!--SEction showing skills-->
+      <div id="skills">
+        <h2>Skills</h2>
+        <p>Development:</p>
+        <ul>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>C++</li>
+        </ul>
+      </div>
+
+      <!--Section showing my contact information-->
+      <div id="contact">
+        <h2>My contact information</h2>
+        <ul>
+          <li>Contact Number: +27676679141</li>
+          <li>Email Address: noziphovivian283@gmail.com</li>
+        </ul>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
